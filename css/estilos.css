@@ -25,4 +25,5 @@ button[type="submit"] { padding: .7rem 1.2rem; border: 0; border-radius: 4px; ba
   .menu-principal { display: none; width: 100%; }
   .menu-principal.abierto { display: block; }
   .menu-principal ul { flex-direction: column; }
+  .activo { color: #126e70; font-weight: bold; }
 }
