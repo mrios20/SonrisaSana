@@ -1,62 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto | Clínica Dental Sonrisa Sana</title>
-  <link rel="stylesheet" href="css/estilos.css">
-</head>
-<body>
-  <header class="encabezado">
-    <a class="logo" href="index.html">Clínica Dental Sonrisa Sana</a>
-    <button class="boton-menu" type="button" aria-label="Abrir menú" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="menu-principal" aria-label="Menú principal">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h1>Contáctanos</h1>
-      <p>Si deseas recibir información sobre nuestros servicios, completa el siguiente formulario. Los campos son obligatorios.</p>
-      <form action="#" method="post" class="formulario-contacto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Clínica Dental Sonrisa Sana en Alajuela, Costa Rica."
+    />
+    <title>Contacto | Clínica Dental Sonrisa Sana</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="contenedor barra-superior">
+        <a class="logo" href="index.html"
+          ><span class="logo-icono">✦</span
+          ><span
+            >Sonrisa <strong>Sana</strong><small>CLÍNICA DENTAL</small></span
+          ></a
+        ><button
+          class="boton-menu"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav
+          class="menu-principal"
+          id="menu-principal"
+          aria-label="Menú principal"
+        >
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="pagina-hero">
+        <div class="contenedor">
+          <p class="etiqueta">ESTAMOS PARA AYUDARTE</p>
+          <h1>Contáctanos</h1>
+          <p>Envíanos tu consulta y con gusto te brindaremos información.</p>
+        </div>
+      </section>
+      <section class="seccion contenedor contacto-layout">
         <div>
-          <label for="nombre">Nombre completo:</label>
-          <input type="text" id="nombre" name="nombre" required>
+          <h2>Información de contacto</h2>
+          <p><strong>Ubicación:</strong> Alajuela, Costa Rica</p>
+          <p><strong>Teléfono:</strong> 2222-2222</p>
+          <p><strong>Correo:</strong> info@sonrisasana.example</p>
+          <p>
+            <strong>Horario:</strong> lunes a viernes, de 8:00 a. m. a 5:00 p.
+            m.
+          </p>
+          <p class="nota">Los datos son de ejemplo y pueden actualizarse.</p>
+        </div>
+        <form action="#" method="post" class="formulario-contacto">
+          <div>
+            <label for="nombre">Nombre completo:</label
+            ><input type="text" id="nombre" name="nombre" required />
+          </div>
+          <div>
+            <label for="correo">Correo electrónico:</label
+            ><input type="email" id="correo" name="correo" required />
+          </div>
+          <div>
+            <label for="mensaje">Mensaje:</label
+            ><textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </div>
+          <button class="boton" type="submit">Enviar mensaje</button>
+          <p class="nota">
+            Formulario demostrativo; no envía datos a un servidor.
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer class="pie-pagina">
+      <div class="contenedor footer-contenido">
+        <div>
+          <a class="logo logo-footer" href="index.html"
+            >Sonrisa <strong>Sana</strong></a
+          >
+          <p>Cuidamos tu sonrisa con atención cercana y responsable.</p>
         </div>
         <div>
-          <label for="correo">Correo electrónico:</label>
-          <input type="email" id="correo" name="correo" required>
+          <h2>Contacto</h2>
+          <p>Alajuela, Costa Rica</p>
+          <p>2222-2222</p>
+          <p>info@sonrisasana.example</p>
         </div>
         <div>
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          <h2>Síguenos</h2>
+          <p>
+            <a href="https://www.facebook.com/">Facebook</a> ·
+            <a href="https://www.instagram.com/">Instagram</a>
+          </p>
         </div>
-        <button type="submit">Enviar mensaje</button>
-      </form>
-    </section>
-    <section>
-      <h2>Información de contacto</h2>
-      <p>Dirección: Alajuela, Costa Rica.</p>
-      <p>Teléfono: 2222-2222</p>
-      <p>Correo: info@sonrisasana.example</p>
-      <p>Horario: lunes a viernes, de 8:00 a. m. a 5:00 p. m.</p>
-    </section>
-  </main>
-
-  <footer class="pie-pagina">
-    <p>Clínica Dental Sonrisa Sana | Alajuela, Costa Rica</p>
-    <p>Teléfono: 2222-2222 | Correo: info@sonrisasana.com</p>
-    <p>Redes sociales: <a href="https://www.facebook.com/">Facebook</a> | <a href="https://www.instagram.com/">Instagram</a></p>
-    <p>&copy; 2026 Clínica Dental Sonrisa Sana. Todos los derechos reservados.</p>
-  </footer>
-  <script src="js/script.js"></script>
-</body>
+      </div>
+      <p class="copyright">
+        © 2026 Clínica Dental Sonrisa Sana. Todos los derechos reservados.
+      </p>
+    </footer>
+    <script src="js/script.js" defer></script>
+  </body>
 </html>

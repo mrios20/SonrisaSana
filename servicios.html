@@ -1,52 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios | Clínica Dental Sonrisa Sana</title>
-  <link rel="stylesheet" href="css/estilos.css">
-</head>
-<body>
-  <header class="encabezado">
-    <a class="logo" href="index.html">Clínica Dental Sonrisa Sana</a>
-    <button class="boton-menu" type="button" aria-label="Abrir menú" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="menu-principal" aria-label="Menú principal">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h1>Nuestros servicios odontológicos</h1>
-      <p>Ofrecemos servicios orientados a mantener una sonrisa saludable. El tratamiento adecuado se determina después de una valoración profesional.</p>
-      <img src="img/servicios-dentales.svg" alt="Ilustración de instrumentos odontológicos para el cuidado dental">
-    </section>
-    <section>
-      <h2>Servicios disponibles</h2>
-      <ul>
-        <li><strong>Valoración dental:</strong> revisión general del estado de los dientes y las encías.</li>
-        <li><strong>Limpieza dental:</strong> procedimiento profesional para ayudar a mantener una buena higiene oral.</li>
-        <li><strong>Operatoria dental:</strong> atención de caries y restauración de piezas dentales, según valoración.</li>
-        <li><strong>Odontología preventiva:</strong> recomendaciones de higiene y cuidado para prevenir problemas bucales.</li>
-        <li><strong>Orientación de higiene oral:</strong> guía sobre cepillado, uso de hilo dental y hábitos saludables.</li>
-      </ul>
-      <p>Para consultar disponibilidad o solicitar información, visita nuestra página de <a href="contacto.html">Contacto</a>.</p>
-    </section>
-  </main>
-
-  <footer class="pie-pagina">
-    <p>Clínica Dental Sonrisa Sana | Alajuela, Costa Rica</p>
-    <p>Teléfono: 2222-2222 | Correo: info@sonrisasana.com</p>
-    <p>Redes sociales: <a href="https://www.facebook.com/">Facebook</a> | <a href="https://www.instagram.com/">Instagram</a></p>
-    <p>&copy; 2026 Clínica Dental Sonrisa Sana. Todos los derechos reservados.</p>
-  </footer>
-  <script src="js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Clínica Dental Sonrisa Sana en Alajuela, Costa Rica."
+    />
+    <title>Servicios | Clínica Dental Sonrisa Sana</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="contenedor barra-superior">
+        <a class="logo" href="index.html"
+          ><span class="logo-icono">✦</span
+          ><span
+            >Sonrisa <strong>Sana</strong><small>CLÍNICA DENTAL</small></span
+          ></a
+        ><button
+          class="boton-menu"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav
+          class="menu-principal"
+          id="menu-principal"
+          aria-label="Menú principal"
+        >
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="pagina-hero">
+        <div class="contenedor">
+          <p class="etiqueta">CUIDAMOS DE TI</p>
+          <h1>Nuestros servicios</h1>
+          <p>
+            Conoce algunas áreas de atención y consulta por el servicio que
+            necesitas.
+          </p>
+        </div>
+      </section>
+      <section class="seccion contenedor">
+        <div class="encabezado-seccion">
+          <h2>Servicios odontológicos</h2>
+          <p>
+            El tratamiento indicado se define después de una valoración
+            profesional.
+          </p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <img
+              src="img/valoracion.svg"
+              alt="Ilustración relacionada con valoración dental"
+            />
+            <div class="card-contenido">
+              <h3>Valoración dental</h3>
+              <p>Revisión general del estado de dientes y encías.</p>
+              <a class="boton boton-secundario" href="contacto.html"
+                >Consultar</a
+              >
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="img/limpieza.svg"
+              alt="Ilustración relacionada con limpieza dental"
+            />
+            <div class="card-contenido">
+              <h3>Limpieza dental</h3>
+              <p>Procedimiento profesional para mantener una buena higiene.</p>
+              <a class="boton boton-secundario" href="contacto.html"
+                >Consultar</a
+              >
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="img/restauracion.svg"
+              alt="Ilustración relacionada con operatoria dental"
+            />
+            <div class="card-contenido">
+              <h3>Operatoria dental</h3>
+              <p>Atención de caries y restauración según valoración.</p>
+              <a class="boton boton-secundario" href="contacto.html"
+                >Consultar</a
+              >
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="img/prevencion.svg"
+              alt="Ilustración relacionada con odontología preventiva"
+            />
+            <div class="card-contenido">
+              <h3>Odontología preventiva</h3>
+              <p>Recomendaciones para prevenir enfermedades bucales.</p>
+              <a class="boton boton-secundario" href="contacto.html"
+                >Consultar</a
+              >
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="img/ortodoncia.svg"
+              alt="Ilustración relacionada con ortodoncia"
+            />
+            <div class="card-contenido">
+              <h3>Ortodoncia</h3>
+              <p>
+                Orientación sobre tratamientos para corregir la posición dental.
+              </p>
+              <a class="boton boton-secundario" href="contacto.html"
+                >Consultar</a
+              >
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="img/odontopediatria.svg"
+              alt="Ilustración relacionada con atención infantil"
+            />
+            <div class="card-contenido">
+              <h3>Atención infantil</h3>
+              <p>Hábitos de higiene oral saludables desde la niñez.</p>
+              <a class="boton boton-secundario" href="contacto.html"
+                >Consultar</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="pie-pagina">
+      <div class="contenedor footer-contenido">
+        <div>
+          <a class="logo logo-footer" href="index.html"
+            >Sonrisa <strong>Sana</strong></a
+          >
+          <p>Cuidamos tu sonrisa con atención cercana y responsable.</p>
+        </div>
+        <div>
+          <h2>Contacto</h2>
+          <p>Alajuela, Costa Rica</p>
+          <p>2222-2222</p>
+          <p>info@sonrisasana.example</p>
+        </div>
+        <div>
+          <h2>Síguenos</h2>
+          <p>
+            <a href="https://www.facebook.com/">Facebook</a> ·
+            <a href="https://www.instagram.com/">Instagram</a>
+          </p>
+        </div>
+      </div>
+      <p class="copyright">
+        © 2026 Clínica Dental Sonrisa Sana. Todos los derechos reservados.
+      </p>
+    </footer>
+    <script src="js/script.js" defer></script>
+  </body>
 </html>
